@@ -8,12 +8,12 @@ body {
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
-	background: #f2f2f2;
+	background-color: #f2f2f2;
 	font-size: 1.5em;
 	line-height: 1.5em;
 	text-align: center;
 	
-	padding-top: 240px;
+	padding-top: 215px;
 }
 
 
@@ -24,21 +24,23 @@ body {
 //-------------------------------
 ************/
 #main-header {
-	background: #333;
-	color: white;
-	height: 240px;
+	background-color: #333;
+	color: #fff;
+	height: 215px;
 	
 	width: 100%;
+	max-width: 600px;
 	left: 0;
 	top: 0;
 	padding-top: 10px;
 	position: fixed;
+	margin: auto;
 }	
 	
 	
 /* Volumen */
 .volumen {
-	margin: 15px auto;
+	margin: 5px auto;
 	color: #0d4b9c;
 	text-align: center;
 }
@@ -87,7 +89,7 @@ body {
   display: inline-block;
   padding-left: 100%; /* Empuja el texto fuera de la vista inicial */
   animation: desplazamiento 10s linear infinite;
-	color: white;
+	color: #fff;
 	font-weight: 600;
 	opacity: 0.8;
 }
@@ -109,7 +111,7 @@ body {
 	display: flex;
 	align-items: center;
 	margin: auto;
-	color: white;
+	color: #fff;
 	font-family: monospace, serif;
 	font-size: 0.7em;
 }
@@ -150,32 +152,33 @@ body {
 //------------------------------
 ************/
 #main-content {
-	background: white;
-	width: 80%;
+	background-color: #fff;
+	width: 100%;
 	max-width: 600px;
 	margin: auto;
 }
 
-	#main-content header,
 	#main-content .content {
-		padding: 10px;
+		padding: 5px 15px;
 	}
 
 #playList {
 	text-align: left;
 	min-height: 50dvh;
+	color: #555;
 }
 
 li {
-	padding: 10px;
+	padding: 10px 5px;
 }
 
 li:hover {
 	cursor: pointer;
-	color: #333;
+	color: #666;
 }
 
 li.active {
+	color: #333;
 	font-weight: 600;
 }
 	
@@ -187,17 +190,17 @@ li.active {
 //-----------------------------
 ************/
 #main-footer {
-	background: #333;
+	background-color: #333;
 	text-align: center;
 	width: 100%;
 	max-width: 600px;
 	margin: auto;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 	#main-footer p {
 		margin: 0;
 		font-size: 0.8em;
-		color: white;
+		color: #fff;
 	}
 
 
@@ -210,7 +213,9 @@ li.active {
 
 /* Para dispositivos con un ancho de 480px o menos, como teléfonos */
 @media only screen and (max-width: 30em) {	
-	#main-header, #main-content, #main-footer {
+	#main-header, 
+	#main-content, 
+	#main-footer {
 		width: 100%;
 		left: 0;
 		right: 0;
@@ -220,7 +225,9 @@ li.active {
 /* Para dispositivos con un ancho de entre 480px y 768px, como teléfonos más grandes y 
 tabletas en orientación vertical */
 @media only screen and (min-width: 30em) {	
-	#main-header, #main-content, #main-footer {
+	#main-header, 
+	#main-content, 
+	#main-footer {
 		width: 80%;
 		left: 10%;
 		right: 10%;
@@ -230,7 +237,9 @@ tabletas en orientación vertical */
 /* Para dispositivos con un ancho de entre 768px y 1280px, como tabletas en orientación 
 horizontal y ordenadores portátiles */
 @media only screen and (min-width: 48em) {	
-	#main-header, #main-content, #main-footer {
+	#main-header, 
+	#main-content, 
+	#main-footer {
 		width: 60%;
 		left: 20%;
 		right: 20%;
@@ -239,7 +248,9 @@ horizontal y ordenadores portátiles */
 
 /* Para dispositivos con un ancho de 1280px y 1920px, como ordenadores de sobremesa */
 @media only screen and (min-width: 80em) {	
-	#main-header, #main-content, #main-footer {
+	#main-header, 
+	#main-content, 
+	#main-footer {
 		width: 40%;
 		left: 30%;
 		right: 30%;
@@ -248,7 +259,9 @@ horizontal y ordenadores portátiles */
 
 /* Para dispositivos con un ancho de 1920px o más, como TV Full HD */
 @media only screen and (min-width: 120em) {
-	#main-header, #main-content, #main-footer {
+	#main-header, 
+	#main-content, 
+	#main-footer {
 		width: 20%;
 		left: 40%;
 		right: 40%;
