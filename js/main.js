@@ -103,7 +103,7 @@ const canciones = [
     } else {
       var anterior = musicaActual - 1;
     }
-    removeActive()
+    removeActive();
     var item=document.getElementById(anterior);
     item.classList.add("active");
     loadMusic(canciones[anterior]);

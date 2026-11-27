@@ -9,8 +9,8 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
 	background-color: #f2f2f2;
-	font-size: 1.5rem;
-	line-height: 1.5rem;
+	font-size: 1rem;
+	line-height: 1rem;
 	text-align: center;
 	
 	padding-top: 200px;
@@ -61,7 +61,7 @@ body {
 .playpauseIcon {
 	width: 90px;
 	height: 90px;
-  margin: 0 30px;
+  margin: 0 30px 5px 30px;
   opacity: 0.8;
   transition: opacity .2s;
 }
@@ -90,6 +90,7 @@ body {
   padding-left: 100%; /* Empuja el texto fuera de la vista inicial */
   animation: desplazamiento 10s linear infinite;
 	color: #fff;
+	font-size: 1.2rem;
 	font-weight: 600;
 	opacity: 0.8;
 }
@@ -156,6 +157,7 @@ body {
 	width: 100%;
 	max-width: 600px;
 	margin: auto;
+	font-size: 1.5rem;
 }
 
 	#main-content .content {
@@ -169,7 +171,8 @@ body {
 }
 
 li {
-	padding: 15px 5px;
+	list-style-type: decimal-leading-zero;
+	line-height: 50px;
 }
 
 li:hover {
