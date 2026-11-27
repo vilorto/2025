@@ -46,7 +46,7 @@ const canciones = [
     loadMusic(itemClick.innerText);
     player.play();
     indiceActual[0] = e.target.id;
-		document.getElementById('iconPlay').src = "svg/pause.svg";
+		document.getElementById('iconPlay').src = "images/svg/pause.svg";
   }
 
   //Funcion para control del volumen
@@ -91,7 +91,7 @@ const canciones = [
     player.play();
     indiceActual[0] = siguiente;
     reproduccionActual(canciones[siguiente]);
-		document.getElementById('iconPlay').src = "svg/pause.svg";
+		document.getElementById('iconPlay').src = "images/svg/pause.svg";
   }
 
   //Funcion para reproducir la cancion anterior
@@ -110,7 +110,7 @@ const canciones = [
     player.play();
     indiceActual[0] = anterior;
     reproduccionActual(canciones[anterior]);
-		document.getElementById('iconPlay').src = "svg/pause.svg";
+		document.getElementById('iconPlay').src = "images/svg/pause.svg";
   }
 
   //Funcion para remover todas las clases css activas
@@ -143,10 +143,10 @@ const canciones = [
   //Funcion para pausar o darle play 
   function togglePlay(){
     if (player.paused){
-			document.getElementById('iconPlay').src = "svg/pause.svg";
+			document.getElementById('iconPlay').src = "images/svg/pause.svg";
       return player.play();
     } else {
-			document.getElementById('iconPlay').src = "svg/play.svg";
+			document.getElementById('iconPlay').src = "images/svg/play.svg";
       return player.pause();
     }
   }
